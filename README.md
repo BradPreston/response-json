@@ -9,7 +9,11 @@ go get github.com/BradPreston/response-json
 
 To use in your file:
 ```
-import response-json "github.com/BradPreston/response-json"
+import resJSON "github.com/BradPreston/response-json"
 
-response-json.ResponseJSON(w, "status", "success", "data", data, 200)
+resJSON.Body(w, "status", "success", "data", data, 200)
 ```
+
+The Body function takes 5 parameters: a response writer, status message, data key, data, and status code.
+
+The status message should be displayed as "success" or "fail" for an easy to understand indication of the status of the response. The data key is the key for the data your displaying. For example "user" if the data you're displaying is user information. The data is, as stated before, the data you want to display. The status code is the status of the response, for example 200, 201, 400, 404, etc.
