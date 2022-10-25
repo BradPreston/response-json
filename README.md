@@ -11,7 +11,7 @@ To use in your file:
 ```
 import resJSON "github.com/BradPreston/response-json"
 
-resJSON.Body(w, "status", "success", "data", data, 200)
+resJSON.Body(w, "success", "data", data, 200)
 ```
 
 The Body function takes 5 parameters: a response writer, status message, data key, data, and status code.
